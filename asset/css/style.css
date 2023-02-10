@@ -586,3 +586,141 @@ input[name="r"]{
     transition: 0.5s;
 
 }
+
+/* Collection Car */
+.collectionCar{
+    margin-top: 200px;
+}
+.collectionCar__heading{
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 72px;
+    font-weight: 800;
+}
+.collectionCar__list{
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 10%;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.collectionCar__item{
+    position: relative;
+}
+.collectionCar__item__img{
+    margin-top: -5px;
+}
+.collectionCar__number__item{
+    display: flex;
+    position: absolute;
+    bottom: 45px;
+    left: 35px;
+}
+.collectionCar__number__item__icon{
+    color: #d5001c;
+    font-size: 1.7rem;
+}
+.collectionCar__number__item__qnt{
+    font-size: 3rem;
+    color: #fff;
+    margin-left: 9px;
+}
+
+
+
+.collectionCar__item__infor{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    display: none;
+    animation: CarlistAnimation 0.4s linear;
+    top: -5px;
+}
+.collectionCar__item__infor__head{
+    margin: 27px 0 0 46px;
+    display: flex;
+    font-size: 1.6rem;
+}
+.collectionCar__item__infor__head__link:hover .collectionCar__item__infor__qnt{
+    color: #d5001c;
+}
+.collectionCar__item__infor__icon{
+    color: #d5001c;
+}
+.collectionCar__item__infor__qnt{
+    color: #fff;
+}
+.collectionCar__item__infor__money{
+    font-size: 1.8rem;
+    margin-left: 63px;
+    margin-top: 17px;
+    color: #fff;
+    font-weight: 900;
+}
+.collectionCar__item__infor__ALL{
+    margin-top: 61%;
+    margin-left: 45px;
+    display: flex;
+    animation: CarInforAnimation 0.3s ease-in-out;
+
+}
+.collectionCar__item__infor__ALL__icon{
+    font-size: 1.7rem;
+    color: #d5001c;
+}
+.collectionCar__item__infor__ALL__dsc{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+.collectionCar__item__infor__ALL__link:hover .collectionCar__item__infor__ALL__dsc{
+    color: #d5001c;
+}
+.collectionCar__item__infor__comparecar{
+    align-items: center;
+    display: flex;
+    margin-left: 46px;
+    margin-top: 23px;
+
+}
+.collectionCar__item__infor__comparecar__link:hover .collectionCar__item__infor__comparecar__dsc{
+    color: #d5001c;
+}   
+.collectionCar__item__infor__comparecar__dsc{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 800;
+  
+}
+.collectionCar__item__infor__icon{
+    font-size: 1.7rem;
+}
+
+.collectionCar__item:hover .collectionCar__number__item{
+    display: none;
+}
+.collectionCar__item:hover .collectionCar__item__infor{
+    display: block;
+}
+@keyframes CarlistAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes CarInforAnimation {
+    from{
+        opacity: 0;
+       margin-top: 69%;
+    }
+    to{
+        opacity: 1;
+        margin-top: 61%;
+
+    }
+}
