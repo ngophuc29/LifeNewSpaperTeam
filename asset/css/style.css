@@ -8,6 +8,7 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
     line-height: 1.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
     
 }
 
@@ -21,7 +22,7 @@ a,li{
 .header{
     height: 100px;
     width: 100%;
-    margin-bottom: 153px;
+    margin-bottom: 90px;
     position: relative;
 }
 .header__logo{
@@ -72,6 +73,7 @@ a,li{
 .header__navbar__item_link{
     display: block;
     color: #000;
+    font-weight: 800;
     font-size: 1.6rem;
     padding: 1px 24px;
 }
@@ -94,6 +96,7 @@ a,li{
     /* box-shadow: 0 0 3px 0px #000; */
     top: 28px;
     left: -3px;
+    z-index: 1;
     border: 1px solid #ccc;
 }
 .header__navbar__trungtamPorcher__list1{
@@ -158,6 +161,7 @@ a,li{
     /* box-shadow: 0 0 3px 0px #000; */
     top: 28px;
     left: -3px;
+    z-index: 1;
     border: 1px solid #ccc;
     
 }
@@ -233,6 +237,7 @@ a,li{
     background-color: #fff;
     /* box-shadow: 0 0 3px 0px #000; */
     top: 28px;
+    z-index: 1;
     left: -3px;
     border: 1px solid #ccc;
 
@@ -310,6 +315,7 @@ a,li{
     /* box-shadow: 0 0 3px 0px #000; */
     top: 28px;
     left: -3px;
+    z-index: 1;
     border: 1px solid #ccc;
     
 }
@@ -414,6 +420,8 @@ a,li{
 }
 
 
+
+/* slider  */
 .continer{
     padding :40px 0;
 }
@@ -422,10 +430,20 @@ a,li{
     width: 100%;
     height: 700px;
     overflow: hidden;
+    animation: sliderAnimation 1s linear;
 }
 
+@keyframes sliderAnimation {
+    from{
+       opacity: 0;
+    }
+    to{
+       opacity: 1;
+
+    }
+}
 .middle{
-    position: absolute;
+    /* position: absolute; */
     left: 0;
 
 }
@@ -438,13 +456,14 @@ a,li{
     transform: translateX(-50%);
 }
 .bar{
-    width: 20px;
-    height: 20px;
-    border: 2px solid red;
+    width: 11px;
+    height: 10px;
     margin: 7px;
+    border-radius: 21px;
+    background-color: #ccc;
 }
 .bar:hover{
-    background-color: pink;
+    background-color: #fff;
     cursor: pointer;
 }
 
@@ -460,6 +479,7 @@ input[name="r"]{
 .slide{
     width: 21.5%;
     transition: 2s;
+    position: relative;
 }
 .slide img{
     width: 100%;
@@ -477,4 +497,92 @@ input[name="r"]{
 
 #r4:checked ~ .s1{
     margin-left: -64.5%;
+}
+.slider__dsc{
+    position: absolute;
+    bottom: 6%;
+    left: 8%;
+    cursor: pointer;
+ 
+}
+
+.slider__head__icon{
+    color: #d5001c;
+    font-size: 3.3rem;
+}
+.slider__head{
+    display: flex;
+    align-items: center;
+    padding-bottom: 11px;
+}
+.slider_header{
+    font-size: 5.9rem;
+    color: #fff;
+    font-weight: 700;
+}
+.slider__dsc_dsc{
+    font-size: 2.6rem;
+    color: #fff;
+    margin: 15px 0 0 27px;
+    font-weight: 600;
+}
+.slider__dsc:hover .slider_header{
+    color: #d5001c;
+}
+.slider__dsc:hover .slider__dsc_dsc{
+    color: #d5001c;
+}
+
+
+/* Continer__menu */
+
+.continer__menu__list{
+    width: 100%;
+    position: absolute;
+    bottom: -15%;
+}
+.continer__menu__wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.continer__menu__item{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    align-items: center;
+    font-size: 1.7rem;
+    margin-right: 43px;
+}
+.continer__menu_link{
+    height: 55px;
+    width: 55px;
+    background-color: #2b4b6c;
+    margin: 15px;
+    display: flex;
+    padding: 10px;
+    line-height: 5.3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12%;
+}
+.continer__menu__icon{
+    width: 85%;
+}
+
+.continer__menu__icon1{
+    width: 140%;
+}
+.continer__menu__name{
+
+    color: #000;
+}
+.continer__menu__item:hover .continer__menu_link{
+    background-color: #d5001c;
+    transition: 0.5s;
+}
+.continer__menu__item:hover .continer__menu__name   {
+    color: #d5001c;
+    transition: 0.5s;
+
 }
