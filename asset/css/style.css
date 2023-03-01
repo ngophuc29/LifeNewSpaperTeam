@@ -23,8 +23,11 @@ a,li{
 .header{
     height: 100px;
     width: 100%;
-    margin-bottom: 90px;
-    position: relative;
+    margin-bottom: 66px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10000;
 }
 .header__logo{
     text-align: center;
@@ -62,7 +65,9 @@ a,li{
 
 }
 .header__navbar{
-    padding: 19px 170px;
+    padding: 19px 170px 27px 170px;
+    box-shadow: -3px 2px 2px #eee;
+    background-color: #fff;
 }
 .header__navbar__list{
 
@@ -392,7 +397,7 @@ a,li{
     width: 217px;
     height: 144px;
     background-color: #eff0f1;
-    top: 30px;
+    top: 66px;
 }
 .header__search__xe__timkiem{
     width: 88%;
@@ -415,7 +420,7 @@ a,li{
 .header__search__contact{
     display: block;
     font-size: 1.8rem;
-    padding: 14px 1px 14px 20px;
+    padding: 14px 1px 16px 20px;
     background-color: #2a4b6d;
     color: #fff;
 }
@@ -424,7 +429,7 @@ a,li{
 
 /* slider  */
 .continer{
-    padding :40px 0;
+    /* padding :40px 0; */
 }
 
 .slidershow{
@@ -450,7 +455,7 @@ a,li{
 }
 
 .navigation{
-    bottom: 20px;
+    bottom: 85px;
     position: absolute;
     left: 50%;
     display: flex;
@@ -540,7 +545,7 @@ input[name="r"]{
 .continer__menu__list{
     width: 100%;
     position: absolute;
-    bottom: -15%;
+    bottom: -8%;
 }
 .continer__menu__wrap{
     display: flex;
