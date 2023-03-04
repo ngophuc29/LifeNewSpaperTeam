@@ -7,6 +7,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     line-height: 1.6rem;
     font-family: 'Oswald', sans-serif;
 /* font-family: 'Source Sans Pro', sans-serif; */
@@ -148,7 +149,6 @@ a,li{
     cursor: pointer;
     border-color: transparent transparent red transparent;
 }
-
 .showlisttrungtam:hover .header__navbar__trungtamPorcher__list{
     display: block;
 }
@@ -433,6 +433,7 @@ background-color: #eff0f1;
     font-weight: 200;
 }
 .sub_header__icon__wrapp{
+    position: relative;
     margin-top: 10px;
     background-color: #950014;
     width: 60px;
@@ -488,4 +489,134 @@ color: #fff;
     /* border-radius: 41px; */
     top: 21px;
     left: 18px;
+}
+
+.sub_header__icon__wrapp:hover{
+    background-color: #000;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    
+}
+.sub_header__icon__wrapp:hover .sup1{
+    background-color: #950014;
+}
+.sub_header__icon__wrapp:hover .sup2{
+    background-color: #950014;
+}
+.sub_header__icon__wrapp:hover .sup3{
+    background-color: #950014;
+}
+.sub_header__icon__wrapp:hover .sup4{
+    background-color: #950014;
+}
+.sub_header__icon__wrapp:hover .sup5{
+    background-color: #950014;
+}
+
+
+
+.sub_header__list{
+    position: absolute;
+    top: 60px;
+    display: none;
+    box-shadow: 0 0 2px #000;
+    width: 303px;
+    background-color: #000;
+    /* height: 71px */
+}
+.sub_header__icon__wrapp:hover .sub_header__list{
+   display: block;
+    
+}
+.sub_header__item{
+
+}
+.sub_header__item__link{
+    display: flex;
+    justify-content: space-between;
+
+    color: #fff;    
+    
+    padding: 14px 12px;
+    font-size: 1.8rem;
+}
+ .sub_header__item__link:hover{
+    background-color: #950014;
+    transition: all 0.2s linear;
+ }
+
+
+ /* Continer */
+ .continer{
+    margin: 249px 190px 70px 190px;
+
+ }
+.continer__car{
+
+
+}
+.continer__car1__wrapp{
+    display: flex;
+
+}
+.continer__car__img__wrap{
+width: 475px;
+
+}
+ 
+.continer__car__img{
+    width: 409px;
+    padding: 0 0 17px 0;
+
+}
+ 
+.continer__car__body{
+    margin-left: 54px;
+
+}
+.continer__car__body__heading{
+    font-size: 2.2rem;
+    font-weight: 200;
+
+}
+.continer__car__body__heading i{
+    color: #950014;
+    font-size: 1.7rem;
+}
+.continer__car__body__list{
+
+    margin-top: 17px;
+}
+.continer__car__body__item{
+    display: flex;
+    padding: 13px 0 13px 0;
+    border-bottom: 1px solid #ccc;
+}
+.continer__car__body__item:last-child{
+    border: none;
+}
+.continer__car__body__item__left__title{
+    width: 361px;
+    font-size: 1.5rem;
+
+}
+.continer__car__body__item__right__dsc{
+    font-size: 1.5rem;
+
+
+}
+
+.continer__car__body__btn{
+    background-color: #313639;
+    color: #fff;
+    display: block;
+    width: 145px;
+    margin-top: 65px;
+    font-size: 1.7rem;
+padding: 21px 0 17px 20px;
+
+}
+.continer__car__body__btn:hover{
+    background-color: #950014;
+    transition: all 0.2s linear;
 }
