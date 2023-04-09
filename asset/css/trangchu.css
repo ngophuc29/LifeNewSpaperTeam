@@ -1,0 +1,546 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.6rem;
+    font-family: 'Oswald', sans-serif;
+/* font-family: 'Source Sans Pro', sans-serif; */
+    
+}
+
+a,li{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* STARTING CODING */
+
+.header{
+    height: 100px;
+    width: 100%;
+    margin-bottom: 66px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10000;
+}
+.header__logo{
+    text-align: center;
+
+}
+.header__logo__link{
+    position: relative;
+
+}
+.header__logo__img{
+    width: 155px;
+}
+/* lam 2 dg ke ben canh logo */
+.header__logo__link::after{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 698px;
+    background-color: #e3e4e4;
+    top: -71%;
+    left: 148px;
+}  
+.header__logo__link::before{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 698px;
+    background-color: #e3e4e4;
+    top: -88%;
+    right: 91%;
+}  
+.header__porsche{
+
+}
+.header__navbar{
+    padding: 19px 170px 27px 170px;
+    box-shadow: -3px 2px 2px #eee;
+    background-color: #fff;
+}
+.header__navbar__list{
+
+}
+.header__navbar__item{
+    display: inline-block;
+    position: relative;
+}
+.header__navbar__item_link{
+    display: block;
+    color: #000;
+    /* font-weight: 800; */
+    font-size: 1.6rem;
+    padding: 1px 24px;
+}
+.header__navbar__item:nth-child(1){
+    border-right: 1px solid #000;
+}
+
+.header__navbar__item_link:hover{
+    color: red;
+}
+
+
+.header__navbar__trungtamPorcher__list{
+    position: absolute;
+    width: 270px;
+    /* height: 97px; */
+    height: 119px;
+    display: none;
+    background-color: #fff;
+    /* box-shadow: 0 0 3px 0px #000; */
+    top: 28px;
+    left: -3px;
+    z-index: 1;
+    border: 1px solid #ccc;
+}
+.header__navbar__trungtamPorcher__list1{
+    position: absolute;
+    top: -9px;
+    left: 43px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    content: "";
+    z-index: 1;
+}
+.header__navbar__trungtamPorcher__list2{
+    position: absolute;
+    top: -10px;
+    left: 43px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ccc;
+    border-left: 10px solid transparent;
+    content: "";
+}
+.header__navbar__trungtamPorcher__link{
+    display: block;
+    font-size: 1.6rem;
+    color: #000;
+    padding:11px 5px;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 0 21px;
+}
+.header__navbar__trungtamPorcher__item:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.header__navbar__trungtamPorcher__item:hover .header__navbar__trungtamPorcher__link{
+    color:#fff;
+    border-color: transparent;
+}
+.header__navbar__trungtamPorcher__item:hover .header__navbar__trungtamPorcher__list1{
+    cursor: pointer;
+    border-color: transparent transparent red transparent;
+}
+.showlisttrungtam:hover .header__navbar__trungtamPorcher__list{
+    display: block;
+}
+.showlisttrungtam:hover .header__navbar__item_link{
+    color:red;
+}
+
+/* Dich vu */
+.header__navbar__dichvu__list{
+    position: absolute;
+    width: 297px;
+    /* height: 97px; */
+    height: 172px;
+    display: none;
+    background-color: #fff;
+    /* box-shadow: 0 0 3px 0px #000; */
+    top: 28px;
+    left: -3px;
+    z-index: 1;
+    border: 1px solid #ccc;
+    
+}
+
+
+/* phan code da them */
+.header__navbar__dichvu__list1{
+    position: absolute;
+    top: -9px;
+    left: 43px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    content: "";
+    z-index: 1;
+}
+.header__navbar__dichvu__list2{
+    position: absolute;
+    top: -10px;
+    left: 43px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ccc;
+    border-left: 10px solid transparent;
+    content: "";
+}
+.header__navbar__dichvu__link{
+    display: block;
+    font-size: 1.6rem;
+    color: #000;
+    padding:11px 5px;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 0 21px;
+}
+.header__navbar__dichvu__item:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.header__navbar__dichvu__item:hover .header__navbar__dichvu__link{
+    color:#fff;
+    border-color: transparent;
+}
+.header__navbar__dichvu__item:hover .header__navbar__dichvu__list1{
+    cursor: pointer;
+    border-color: transparent transparent red transparent;
+}
+
+.showlisttrungtam:hover .header__navbar__dichvu__list{
+    display: block;
+}
+.showlisttrungtam:hover .header__navbar__item_link{
+    color:red;
+}
+
+
+/* code sau khi them xong */
+.showdichvu:hover .header__navbar__dichvu__list{
+    display: block;
+}
+.showdichvu:hover .header__navbar__item_link{
+    color:red;
+}
+/* Ve Porsche */
+.header__navbar__about__list{
+    position: absolute;
+    width: 215px;
+    /* height: 97px; */
+    height: 197px;
+    display: none;
+    background-color: #fff;
+    /* box-shadow: 0 0 3px 0px #000; */
+    top: 28px;
+    z-index: 1;
+    left: -3px;
+    border: 1px solid #ccc;
+
+}
+/* phan code da them */
+.header__navbar__about__list1{
+    position: absolute;
+    top: -9px;
+    left: 43px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    content: "";
+    z-index: 1;
+}
+.header__navbar__about__list2{
+    position: absolute;
+    top: -10px;
+    left: 43px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ccc;
+    border-left: 10px solid transparent;
+    content: "";
+}
+.header__navbar__about__link{
+    display: block;
+    font-size: 1.6rem;
+    color: #000;
+    padding:11px 5px;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 0 21px;
+}
+.header__navbar__about__item:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.header__navbar__about__item:hover .header__navbar__about__link{
+    color:#fff;
+    border-color: transparent;
+}
+.header__navbar__about__item:hover .header__navbar__about__list1{
+    cursor: pointer;
+    border-color: transparent transparent red transparent;
+}
+
+.showlisttrungtam:hover .header__navbar__about__list{
+    display: block;
+}
+.showlisttrungtam:hover .header__navbar__item_link{
+    color:red;
+}
+
+
+/* code sau khi them xong */
+.showabout:hover .header__navbar__about__list{
+    display: block;
+}
+
+.showabout:hover .header__navbar__item_link{
+    color:red;
+}
+
+/* Tieu diem */
+.header__navbar__tieudiem__list{
+    position: absolute;
+    width: 613px;
+    /* height: 97px; */
+    height: 119px;
+    display: none;
+    background-color: #fff;
+    /* box-shadow: 0 0 3px 0px #000; */
+    top: 28px;
+    left: -3px;
+    z-index: 1;
+    border: 1px solid #ccc;
+    
+}
+/* phan code da them */
+.header__navbar__tieudiem__list1{
+    position: absolute;
+    top: -9px;
+    left: 43px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    content: "";
+    z-index: 1;
+}
+.header__navbar__tieudiem__list2{
+    position: absolute;
+    top: -10px;
+    left: 43px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ccc;
+    border-left: 10px solid transparent;
+    content: "";
+}
+.header__navbar__tieudiem__link{
+    display: block;
+    font-size: 1.6rem;
+    color: #000;
+    padding:11px 5px;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 0 21px;
+}
+.header__navbar__tieudiem__item:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.header__navbar__tieudiem__item:hover .header__navbar__tieudiem__link{
+    color:#fff;
+    border-color: transparent;
+}
+.header__navbar__tieudiem__item:hover .header__navbar__tieudiem__list1{
+    cursor: pointer;
+    border-color: transparent transparent red transparent;
+}
+
+.showlisttrungtam:hover .header__navbar__tieudiem__list{
+    display: block;
+}
+.showlisttrungtam:hover .header__navbar__item_link{
+    color:red;
+}
+
+
+/* code sau khi them xong */
+.showtieudiem:hover .header__navbar__tieudiem__list{
+    display: block;
+}
+
+.showtieudiem:hover .header__navbar__item_link{
+    color:red;
+}
+
+
+/* Search Xe */
+
+.header__search__xe{
+   
+    position: absolute;
+    right: 187px;
+    width: 217px;
+    height: 144px;
+    background-color: #eff0f1;
+    top: 66px;
+}
+.header__search__xe__timkiem{
+    width: 88%;
+    padding: 8px;
+    outline: #ccc;
+    font-size: 1.4rem;
+    margin: 16px 1px 4px 17px;
+}
+.header__search__taocauhinhxe{
+    display: block;
+    font-size: 1.8rem;
+    padding: 13px 1px 14px 20px;
+    color: #2a4b6d;
+
+}
+.header__search__taocauhinhxe i{
+    padding: 0 0 0 38px;
+    font-size: 1.2rem;
+}
+.header__search__contact{
+    display: block;
+    font-size: 1.8rem;
+    padding: 14px 1px 16px 20px;
+    background-color: #2a4b6d;
+    color: #fff;
+}
+
+.sub_header{
+background-color: #eff0f1;
+}
+.sub_header__heading{
+    font-size: 2.4rem;
+    font-weight: 200;
+}
+.sub_header__icon__wrapp{
+    position: relative;
+    margin-top: 10px;
+    background-color: #950014;
+    width: 60px;
+    height: 60px;
+}
+.sub_header__icon__icon{
+color: #fff;
+}
+
+.sup1{
+    width: 24px;
+    height: 3.6px;
+    background-color: #fff;
+    position: relative;
+    top: 17px;
+    left: 18px;
+}
+
+
+.sup2{
+    width: 16px;
+    height: 2.6px;
+    background-color: #fff;
+    position: relative;
+    top: 24px;
+    left: 25px;
+}
+
+.sup3{
+    width: 16px;
+    height: 2.6px;
+    background-color: #fff;
+    position: relative;
+    top: 30px;
+    left: 25px;
+}
+
+
+.sup4{
+    width: 4px;
+    height: 4.6px;
+    background-color: #fff;
+    position: relative;
+    /* border-radius: 41px; */
+    top: 16px;
+    left: 18px;
+}
+.sup5{
+    width: 4px;
+    height: 4.6px;
+    background-color: #fff;
+    position: relative;
+    /* border-radius: 41px; */
+    top: 21px;
+    left: 18px;
+}
+
+.sub_header__icon__wrapp:hover{
+    background-color: #000;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    
+}
+.sub_header__icon__wrapp:hover .sup1{
+    background-color: #950014;
+}
+.sub_header__icon__wrapp:hover .sup2{
+    background-color: #950014;
+}
+.sub_header__icon__wrapp:hover .sup3{
+    background-color: #950014;
+}
+.sub_header__icon__wrapp:hover .sup4{
+    background-color: #950014;
+}
+.sub_header__icon__wrapp:hover .sup5{
+    background-color: #950014;
+}
+
+
+
+.sub_header__list{
+    position: absolute;
+    top: 60px;
+    display: none;
+    box-shadow: 0 0 2px #000;
+    width: 303px;
+    background-color: #000;
+    /* height: 71px */
+}
+.sub_header__icon__wrapp:hover .sub_header__list{
+   display: block;
+    
+}
+.sub_header__item{
+
+}
+.sub_header__item__link{
+    display: flex;
+    justify-content: space-between;
+
+    color: #fff;    
+    
+    padding: 14px 12px;
+    font-size: 1.8rem;
+}
+ .sub_header__item__link:hover{
+    background-color: #950014;
+    transition: all 0.2s linear;
+ }
